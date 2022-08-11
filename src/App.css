@@ -10,14 +10,7 @@ main{
   width: 100%;
   padding: 20px;
 }
-.sidebar{
-  background: #ffffff;
-  color: #000;
-  text-decoration: none;
-  height: 100vh;
-  width: 200px;
-  transition: all 0.5s;
-}
+
 .top_section{
   display: flex;
   align-items: center;
@@ -70,8 +63,7 @@ main{
 }
 
 .pages2{
-    width: 100%;
-    padding: 1rem;
+  width: 100%;
 }
 
 a{

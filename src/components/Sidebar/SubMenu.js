@@ -61,9 +61,9 @@ function SubMenu({item,toggle,isOpen}){
 
     return (
         <>
-            <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
+            <SidebarLink  to={item.path} onClick={item.subNav && showSubnav}>
                 <div className={'d-flex align-items-center'}>
-                    <div >
+                    <div>
                         {item.icon}
                     </div>
                     <SidebarLabel>{item.title}</SidebarLabel>   <div>

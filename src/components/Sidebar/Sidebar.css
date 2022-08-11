@@ -13,13 +13,9 @@ body{
     display: flex;
     height: 100vh;
 }
-.sidebar{
 
-    display: flex;
+.sidebar:hover{
     width: 280px;
-    height: 100%;
-    overflow: auto;
-    background: red;
 }
 .nav{
     height: 60px;
@@ -41,10 +37,17 @@ body{
     color: #000;
 }
 .sidebar{
-    background: #ffffff;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
     color: #000;
     text-decoration: none;
-    height: 100vh;
-    width: 200px;
-    transition: all 0.5s;
+    height: max-content;
+    width: 300px;
+    transition:  all 0.5s ease;
 }
+.sidebar2{
+    transition:  all 0.5s ease;
+    overflow: hidden;
+    width: 50px;
+}
+

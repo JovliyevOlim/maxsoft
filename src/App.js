@@ -32,7 +32,7 @@ function App(){
         <BrowserRouter>
                 <Navbar toggle={toggle}/>
             <hr/>
-            <div className={'d-flex'}>
+            <div className={'d-flex gap-3'}>
                 <Sidebar isOpen={isOpen} toggle={toggle}/>
                 <div className={'pages2'}>
                     <Switch>
