@@ -1,16 +1,16 @@
 
 import {
-    FaLayerGroup,
     FaChartPie,
-    FaNewspaper,
-    FaPager,
-    FaBriefcase,
     FaLock,
     FaSortUp,
-    FaCommentAlt,
-    FaBars,
     FaHandsHelping, FaSortDown
 } from 'react-icons/fa'
+import {BsFillFileEarmarkBarGraphFill } from 'react-icons/bs'
+import {GiShoppingBag} from 'react-icons/gi'
+import {RiMessage2Fill} from 'react-icons/ri'
+import {SiReadthedocs} from 'react-icons/si'
+import {BsCollectionFill} from 'react-icons/bs'
+import {IoMdHelpBuoy} from 'react-icons/io'
 const SidebarData = [
     {
       title: "Overview",
@@ -20,7 +20,8 @@ const SidebarData = [
     {
       title: "Pages",
       path: "/pages",
-      icon: <FaLayerGroup/>,
+      // icon: <FaLayerGroup/>,
+      icon: <BsFillFileEarmarkBarGraphFill/>,
       iconClosed: <FaSortUp/>,
       iconOpened: <FaSortDown/>,
       subNav: [
@@ -37,7 +38,7 @@ const SidebarData = [
     {
       title: "Sales",
       path: "/sales",
-      icon: <FaBriefcase/>,
+      icon: <GiShoppingBag/>,
       iconClosed: <FaSortUp/>,
       iconOpened: <FaSortDown/>,
       subNav: [
@@ -58,7 +59,7 @@ const SidebarData = [
     {
         title: "Messages",
         path: "/messages",
-        icon: <FaCommentAlt/>
+        icon: <RiMessage2Fill/>
     },
     {
         title: "Authentication",
@@ -80,12 +81,12 @@ const SidebarData = [
     {
         title: "Docs",
         path: "/docs",
-        icon: <FaNewspaper/>
+        icon: <SiReadthedocs/>
     },
     {
         title: "Components",
         path: "/components",
-        icon: <FaPager/>
+        icon: <BsCollectionFill/>
     },
     {
         title: "Help",
