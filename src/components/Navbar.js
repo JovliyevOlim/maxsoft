@@ -11,7 +11,7 @@ function Navbar({toggle}) {
                 <div className="navbarleft">
                     <div className="logo">
                         <GrGoogle/>
-                        <FaBars onClick={toggle}/>
+                        <FaBars style={{cursor:"pointer"}} onClick={toggle}/>
                     </div>
                     <div className={'search'}>
                         <FaSearchLocation className={'icon'}/>
