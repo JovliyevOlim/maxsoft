@@ -1,6 +1,7 @@
 import {FaBars} from 'react-icons/fa'
 import {NavLink} from "react-router-dom";
 import {useState} from "react";
+import '../components/Sidebar/Sidebar.css'
 import SidebarData from "./Sidebar/SidebarData";
 import SubMenu from "./Sidebar/SubMenu";
 import {FaDashcube} from 'react-icons/fa'
@@ -8,7 +9,7 @@ function Sidebar({toggle,isOpen}){
 
 
     return (
-            <div style={{width: isOpen?"280px":"50px"}} className="sidebar">
+            <div className={`${isOpen?'sidebar2':''} sidebar `}>
                 <div>
                     {
                         SidebarData.map((item,index)=>{

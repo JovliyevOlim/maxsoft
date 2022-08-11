@@ -1,9 +1,9 @@
 import React from 'react';
 import './navbar.css'
-// import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import {GrGoogle} from 'react-icons/gr'
 import {RiNotification2Fill} from 'react-icons/ri'
-import {FaBars, FaSearchLocation} from 'react-icons/fa'
+import {FaBars} from 'react-icons/fa'
+import {AiOutlineSearch} from 'react-icons/ai'
 function Navbar({toggle}) {
     return (
         <div className={'navbar'}>
@@ -14,7 +14,7 @@ function Navbar({toggle}) {
                         <FaBars style={{cursor:"pointer"}} onClick={toggle}/>
                     </div>
                     <div className={'search'}>
-                        <FaSearchLocation className={'icon'}/>
+                        <AiOutlineSearch className={'icon'}/>
                         <input type="text" placeholder={'Search...'} size={50}/>
                     </div>
                 </div>
