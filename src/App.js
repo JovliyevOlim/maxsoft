@@ -52,9 +52,9 @@ function App(){
                 </div>
             </div>
 
-
         </BrowserRouter>
 
     </div>)
+
 }
 export default App
