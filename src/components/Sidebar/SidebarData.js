@@ -14,7 +14,7 @@ import {BsCollectionFill} from 'react-icons/bs'
 const SidebarData = [
     {
       title: "Overview",
-      path: "/overview",
+      path: "/",
       icon: <FaChartPie/>
     },
     {

@@ -36,7 +36,6 @@ function App(){
                 <Sidebar isOpen={isOpen} toggle={toggle}/>
                 <div className={'pages2'}>
                     <Switch>
-                        <Route path={"/overview"} component={Overview}/>
                         <Route path={"/pages/page-1"} component={Page1}/>
                         <Route path={"/pages/page-2"} component={Page2}/>
                         <Route path={"/sales/product-list"} component={ProductList}/>
@@ -48,6 +47,7 @@ function App(){
                         <Route path={"/docs"} component={Docs}/>
                         <Route path={"/components"} component={Components}/>
                         <Route path={"/help"} component={Help}/>
+                        <Route path={"/"} component={Overview}/>
                     </Switch>
                 </div>
             </div>
