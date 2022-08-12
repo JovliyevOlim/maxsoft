@@ -23,8 +23,8 @@ function Table(){
 
     return (
         <div className={"box"}>
-            <div className="box-1">
-                <div className="card" >
+            <div className="box-1 border-0">
+                <div className="card border-0 rounded-0" >
                     <div className="card-header">
                         <h5>Latest Customers</h5>
                     </div>
@@ -49,8 +49,8 @@ function Table(){
                 </div>
             </div>
 
-            <div className="box-2">
-                <div className="card">
+            <div className="box-2 border-0">
+                <div className="card border-0">
                     <div className="card-header">
                         <h5>Top Products</h5>
                     </div>

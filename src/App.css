@@ -38,7 +38,7 @@ main{
   transition: all 0.4s;
 }
 .active{
-  color: #0bb68f;
+  background-color: #0bb68f;
 }
 .icon, .link_text{
   font-size: 20px;

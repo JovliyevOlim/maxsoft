@@ -3,7 +3,7 @@ import './Sidebar.css'
 import styled from 'styled-components'
 import {useState} from "react";
 
-function SubMenu({item,toggle,isOpen}){
+function SubMenu({item,toggle,isOpen,active,setactive}){
 
     const SidebarLink = styled(Link)`
       display: flex;
@@ -25,6 +25,7 @@ function SubMenu({item,toggle,isOpen}){
     const [subnav,setSubnav] = useState(false)
     function showSubnav(){
         setSubnav(!subnav)
+        setactive(item.title)
     }
 
     const SidebarLabel = styled.span`
@@ -54,14 +55,15 @@ function SubMenu({item,toggle,isOpen}){
         border-radius: 30px;
         cursor: pointer;
         margin-left: 8px;
-        color: #000;
+        color: #000;  
         width: 80%;
       }
     `
 
+
     return (
         <>
-            <SidebarLink  to={item.path} onClick={item.subNav && showSubnav}>
+            <SidebarLink  className={active}   to={item.path} onClick={item.subNav && showSubnav}>
                 <div className={'d-flex align-items-center'}>
                     <div>
                         {item.icon}

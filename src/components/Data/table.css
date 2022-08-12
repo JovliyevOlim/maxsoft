@@ -56,3 +56,45 @@
     -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
     box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
 }
+.table .tableCell {
+    align-self: center;
+}
+.table .status {
+    padding: 5px;
+    border-bottom: 5px;
+    border-radius: 10px;
+}
+.table .status.Completed {
+    color: green;
+    background-color: rgba(0, 128, 0, 0.151);
+}
+.table .status.Cancelled {
+    color: red;
+    background-color: rgb(229, 185, 185);
+}
+.table .status.In{
+    color: blueviolet;
+    background-color: #a5c2f5;
+}
+.table{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+}
+.listContainer {
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 20px;
+}
+.listContainer .listTitle h4 {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 5px;
+}
+.listContainer .listTitle p {
+    font-size: 14px;
+    color: gray;
+}
+.listTitle {
+    margin-bottom: 15px;
+}
