@@ -1,9 +1,58 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
 .avatar{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     border: 2px solid ;
 }
-.box .box-1 .card .card-body span img{
-
+.card .card-body span img{
+    margin-left: 3px;
+}
+.name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+}
+.email{
+    margin-left: 10px;
+    color: grey;
+    font-size: 15px;
+}
+.salary{
+    position: absolute;
+    right: 1rem;
+}
+.map{
+    display: flex;
+    align-items: center;
+}
+.box{
+    display: flex;
+}
+.box-1{
+    width: 33%;
+    margin-top: 15px;
+}
+.box-2{
+    position: absolute;
+    left: 47%;
+    margin-top: 15px;
+    width: 53%;
+}
+.framework{
+    font-size: 15px;
+    color: grey;
+}
+.sale{
+    position: absolute;
+    right: 4%;
+}
+.card{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
 }

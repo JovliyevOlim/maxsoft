@@ -10,7 +10,7 @@ import {GiShoppingBag} from 'react-icons/gi'
 import {RiMessage2Fill} from 'react-icons/ri'
 import {SiReadthedocs} from 'react-icons/si'
 import {BsCollectionFill} from 'react-icons/bs'
-import {IoMdHelpBuoy} from 'react-icons/io'
+
 const SidebarData = [
     {
       title: "Overview",
