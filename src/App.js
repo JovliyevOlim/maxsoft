@@ -19,6 +19,7 @@ import Auth1 from "./components/SidebarPages/PagesAuth/Auth1";
 import Auth2 from "./components/SidebarPages/PagesAuth/Auth2";
 import Navbar from './components/Navbar'
 import {useState} from 'react'
+import Footer from "./components/footer";
 function App(){
 
     const [isOpen,setIsOpen] = useState(false)
@@ -49,10 +50,10 @@ function App(){
                         <Route path={"/help"} component={Help}/>
                         <Route path={"/"} component={Overview}/>
                     </Switch>
+                    <Footer/>
                 </div>
+
             </div>
-
-
         </BrowserRouter>
 
     </div>)

@@ -1,0 +1,19 @@
+.footer{
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-icons{
+ display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    font-size: 18px;
+}
+.footer-text p{
+    margin: 0;
+    color: gray;
+    font-size: 14px;
+}

@@ -81,6 +81,8 @@ main{
 
 .pages2{
   width: 100%;
+  border: 1px rgba(247, 243, 243, 0.5) solid;
+  padding: 20px;
 }
 
 a{
