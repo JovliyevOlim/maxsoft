@@ -11,6 +11,8 @@ function Sidebar({toggle,isOpen}){
 
     function setactive2(title){
         setactive(title)
+        console.log(title)
+        console.log(active)
     }
 
     return (
@@ -18,7 +20,7 @@ function Sidebar({toggle,isOpen}){
                 <div>
                     {
                         SidebarData.map((item,index)=>{
-                            return <SubMenu  isOpen={isOpen} toggle={toggle} item={item} active={item.title === active ? "active":''} setactive={setactive2}  key={index}/>
+                            return <SubMenu classes={item.title === active ? "sidebar-item2" :'sidebar-item'} isOpen={isOpen} toggle={toggle} item={item} active={item.title === active ? "active":''} setactive={setactive2}  key={index}/>
                         })
                     }
                 </div>
