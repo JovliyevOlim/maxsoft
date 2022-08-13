@@ -34,7 +34,7 @@ function App(){
             <hr/>
             <div className={'d-flex gap-3'}>
                 <Sidebar isOpen={isOpen} toggle={toggle}/>
-                <div className={'pages2'}>
+                <div className={'pages2'} style={{width:`${isOpen? 'calc(100% - 50px)':'calc(100% - 250px)'}`}}>
                     <Switch>
                         <Route path={"/pages/page-1"} component={Page1}/>
                         <Route path={"/pages/page-2"} component={Page2}/>
@@ -51,9 +51,7 @@ function App(){
                     </Switch>
                 </div>
             </div>
-
         </BrowserRouter>
-
     </div>)
 
 }

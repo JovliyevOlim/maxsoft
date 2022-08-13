@@ -1,10 +1,11 @@
-import {FaBars} from 'react-icons/fa'
-import {NavLink} from "react-router-dom";
+
 import {useState} from "react";
 import '../components/Sidebar/Sidebar.css'
 import SidebarData from "./Sidebar/SidebarData";
 import SubMenu from "./Sidebar/SubMenu";
-import {FaDashcube} from 'react-icons/fa'
+import {FiSettings} from 'react-icons/fi'
+import {GoSettings} from 'react-icons/go'
+import {ImEarth} from 'react-icons/im'
 function Sidebar({toggle,isOpen}){
 
     const [active,setactive] = useState('Overview')
@@ -14,14 +15,20 @@ function Sidebar({toggle,isOpen}){
     }
 
     return (
-            <div className={`${isOpen?'sidebar2':''} sidebar `}>
-                <div>
+            <div className={`${isOpen?'sidebar2':''} sidebar`} style={{maxWidth:'467px'?`${toggle}`:''}} >
+                <div >
                     {
                         SidebarData.map((item,index)=>{
                             return <SubMenu  isOpen={isOpen} toggle={toggle} item={item} active={item.title === active ? "active":''} setactive={setactive2}  key={index}/>
                         })
                     }
                 </div>
+                <div  className={`${isOpen?'sidebar2':''} Sidebarsettings`}>
+                    <GoSettings className={'go'}/>
+                    <ImEarth className={'go'}/>
+                    <FiSettings className={'go'}/>
+                </div>
+
             </div>
     )
 }

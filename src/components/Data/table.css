@@ -98,3 +98,67 @@
 .listTitle {
     margin-bottom: 15px;
 }
+
+@media (max-width: 467px) {
+    .box{
+        display: inline-block;
+        width: 100%;
+        height: max-content;
+    }
+    .box-1{
+        width: 100%;
+    }
+    .box-2{
+        width: 100%;
+        position: revert;
+    }
+    .tab{
+        border: 1px solid red;
+    }
+}
+@media (min-width: 467.1px) and (max-width: 768px){
+    .box{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .box-1{
+        flex: 48%;
+        max-width: 48%;
+        font-size: 14px;
+    }
+    .box-2{
+        max-width: 48%;
+        position: revert;
+        margin-left: 1%;
+        font-size: 14px;
+    }
+}
+@media (min-width: 768.1px) and (max-width: 989px){
+    .box{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .box-1{
+        width: 49%;
+    }
+    .box-2{
+        width: 49%;
+        position: revert;
+        margin-left: 1%;
+    }
+}
+
+@media (min-width: 989.1px) {
+    .box{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .box-1{
+        width: 49%;
+    }
+    .box-2{
+        width: 49%;
+        position: revert;
+        margin-left: 1%;
+    }
+}

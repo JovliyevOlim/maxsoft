@@ -18,33 +18,35 @@ const rows = [
 ];
 function Table2(props) {
     return (
-        <TableContainer component={Paper} className={'table'}>
-            <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                <TableHead>
-                    <TableRow>
-                        <TableCell className={'tableCell'}>TRANSACTION</TableCell>
-                        <TableCell className={'tableCell'}>DATE & TIME</TableCell>
-                        <TableCell className={'tableCell'}>AMOUNT</TableCell>
-                        <TableCell className={'tableCell'}>STATUS</TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {
-                        rows.map((row) => (
-                            <TableRow
-                                key={row.id}
-                            >
-                                <TableCell className={'tableCell'}>Payment {row.id}</TableCell>
-                                <TableCell className={'tableCell'}>{row.date}</TableCell>
-                                <TableCell className={'tableCell'}>{row.amount}</TableCell>
-                                <TableCell className={'tableCell'}>
-                                    <span className={`status ${row.status}`}>{row.status}</span>
-                                </TableCell>
-                            </TableRow>
-                        ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
+        <div className={'tab'}>
+            <TableContainer component={Paper} className={'table'}>
+                <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                    <TableHead>
+                        <TableRow>
+                            <TableCell className={'tableCell'}>TRANSACTION</TableCell>
+                            <TableCell className={'tableCell'}>DATE & TIME</TableCell>
+                            <TableCell className={'tableCell'}>AMOUNT</TableCell>
+                            <TableCell className={'tableCell'}>STATUS</TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        {
+                            rows.map((row) => (
+                                <TableRow
+                                    key={row.id}
+                                >
+                                    <TableCell className={'tableCell'}>Payment {row.id}</TableCell>
+                                    <TableCell className={'tableCell'}>{row.date}</TableCell>
+                                    <TableCell className={'tableCell'}>{row.amount}</TableCell>
+                                    <TableCell className={'tableCell'}>
+                                        <span className={`status ${row.status}`}>{row.status}</span>
+                                    </TableCell>
+                                </TableRow>
+                            ))}
+                    </TableBody>
+                </Table>
+            </TableContainer>
+        </div>
     );
 }
 
