@@ -36,9 +36,7 @@ function Messages(){
             </header>
 
             <section>
-                {
-                    user ?<Chat/> : <SignIn/>
-                }
+              <Chat/>
 
             </section>
         </div>
