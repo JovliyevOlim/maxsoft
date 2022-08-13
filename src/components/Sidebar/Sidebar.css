@@ -62,9 +62,10 @@ body{
 }
 .Sidebarsettings{
     position: absolute;
-    bottom: 1%;
+    bottom: 3%;
     left: 3%;
     display: flex;
+    justify-content: center;
     width: 100px;
     align-items: center;
 }

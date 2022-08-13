@@ -72,7 +72,7 @@ function Chat(){
     const dummy = useRef()
     const messagesRef = firestore.collection('messages');
     console.log(messagesRef)
-    const query = messagesRef.orderBy('createAt').limit(25)
+    const query = messagesRef.orderBy('createAt').limit(1000)
 
     const [messages] = useCollectionData(query,{idField:'id'});
 
@@ -104,7 +104,7 @@ function Chat(){
         </main>
 
             <form onSubmit={sendMessage}>
-                <input value={formValue} onChange={(e)=>setFormValue(e.target.value)} type="text"/>
+                <input className={'message-input'} value={formValue} onChange={(e)=>setFormValue(e.target.value)} type="text"/>
                 <button type={'submit'}><FaTelegramPlane/></button>
             </form>
         </>
@@ -120,7 +120,7 @@ function ChatMessage(props){
 
     return (
         <div className={`message ${messageClass}`}>
-            <img src={photoURL} />
+            <img className={'message-img'} src={photoURL} />
             <p>{text}</p>
         </div>
     )

@@ -20,6 +20,7 @@ import Auth2 from "./components/SidebarPages/PagesAuth/Auth2";
 import Navbar from './components/Navbar'
 import {useState} from 'react'
 import Footer from "./components/footer";
+import {useEffect} from "react";
 function App(){
 
     const [isOpen,setIsOpen] = useState(false)
@@ -27,6 +28,7 @@ function App(){
     function toggle(){
         setIsOpen(!isOpen)
     }
+
 
 
     return (<div>

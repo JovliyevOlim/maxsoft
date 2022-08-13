@@ -17,3 +17,22 @@
     color: gray;
     font-size: 14px;
 }
+@media (max-width: 467px) {
+    .footer{
+        display: block;
+        gap: 15px;
+    }
+    .footer-text p{
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media (min-width: 467.1px) and (max-width: 768px){
+    .footer{
+        display: block;
+    }
+    .footer-text p{
+      margin-bottom: 1rem;
+    }
+}

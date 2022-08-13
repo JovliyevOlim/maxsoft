@@ -1,16 +1,16 @@
 import React from 'react';
 import './navbar.css'
-import {GrGoogle} from 'react-icons/gr'
 import {RiNotification2Fill} from 'react-icons/ri'
 import {FaBars} from 'react-icons/fa'
 import {AiOutlineSearch} from 'react-icons/ai'
+import {SiDash} from 'react-icons/si'
 function Navbar({toggle}) {
     return (
         <div className={'navbar'}>
             <div className="wrapper">
                 <div className="navbarleft">
                     <div className="logo">
-                        <GrGoogle/>
+                        <SiDash/>
                         <FaBars style={{cursor:"pointer"}} onClick={toggle}/>
                     </div>
                     <div className={'search'}>

@@ -63,7 +63,7 @@ form button {
 }
 
 
-input {
+.message-input{
     line-height: 1.5;
     width: 100%;
     font-size: 1.5rem;
@@ -138,7 +138,7 @@ p {
     color: black;
 }
 
-img {
+.message-img{
     width: 40px;
     height: 40px;
     border-radius: 50%;

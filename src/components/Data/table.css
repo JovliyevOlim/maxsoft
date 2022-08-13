@@ -72,7 +72,7 @@
     color: red;
     background-color: rgb(229, 185, 185);
 }
-.table .status.In{
+.table .status.Inprogress{
     color: blueviolet;
     background-color: #a5c2f5;
 }
@@ -112,9 +112,7 @@
         width: 100%;
         position: revert;
     }
-    .tab{
-        border: 1px solid red;
-    }
+
 }
 @media (min-width: 467.1px) and (max-width: 768px){
     .box{
