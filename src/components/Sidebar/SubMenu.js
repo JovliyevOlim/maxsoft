@@ -1,9 +1,10 @@
 import {Link} from 'react-router-dom'
 import './Sidebar.css'
 import styled from 'styled-components'
+import {BsFillRecordCircleFill} from 'react-icons/bs'
 import {useState} from "react";
 
-function SubMenu({item,toggle,isOpen,active,setactive}){
+function SubMenu({item,toggle,isOpen,active,setactive,classes}){
 
     const SidebarLink = styled(Link)`
       display: flex;
@@ -26,6 +27,8 @@ function SubMenu({item,toggle,isOpen,active,setactive}){
     function showSubnav(){
         setSubnav(!subnav)
         setactive(item.title)
+        setLinkActive('')
+
     }
 
     const SidebarLabel = styled.span`
@@ -41,29 +44,30 @@ function SubMenu({item,toggle,isOpen,active,setactive}){
     const DropdownLink = styled(Link)`
         //background: #252831;
         height: 45px;
-        padding-left: 3.5rem;
+        padding-left: 3rem;
         display: flex;
         align-items: center;
         text-decoration: none;
         font-size: 16px;
         color: #000;
         transition: all 0.2s ease;
-      &:hover{
-        border: 1px solid gray;
-        transform: scale(1.1);
-        //background: gray;
-        border-radius: 30px;
-        cursor: pointer;
-        margin-left: 8px;
-        color: #000;  
-        width: 80%;
-      }
+      
     `
 
+    function activelink(){
+        setactive(item.title)
+        setLinkActive('')
 
+    }
+
+    const [link,setLinkActive] = useState('')
+
+    function setLink(title){
+        setLinkActive(title)
+    }
     return (
-        <>
-            <SidebarLink  className={active}   to={item.path} onClick={item.subNav && showSubnav}>
+        <div className={classes}>
+            <SidebarLink  className={active}   to={item.path} onClick={item.subNav ? item.subNav && showSubnav : activelink}>
                 <div className={'d-flex align-items-center'}>
                     <div>
                         {item.icon}
@@ -78,14 +82,16 @@ function SubMenu({item,toggle,isOpen,active,setactive}){
                     </div>
                 </SideIcon>
             </SidebarLink>
-            {subnav && item.subNav.map((item,index)=>{
+            {item.subNav || subnav ? item.subNav.map((item,index)=>{
                 return (
-                    <DropdownLink to={item.path} key={index}>
-                        {item.title}
-                    </DropdownLink>
+
+                        <DropdownLink onClick={()=>setLink(item.title)} className={active+" "+(item.title === link ? "linkactive":'')} to={item.path} key={index}>
+                            <BsFillRecordCircleFill className={'link-icon' + " "+(item.title === link ? "link-icon-active":'')}/>
+                            <p>{item.title}</p>
+                        </DropdownLink>
                 )
-            })}
-        </>
+            }) :''}
+        </div>
     )
 }
 export default SubMenu

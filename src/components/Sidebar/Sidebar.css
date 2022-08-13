@@ -50,7 +50,16 @@ body{
     overflow: hidden;
     width: 50px;
 }
-
+.sidebar-item{
+    height: 50px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.sidebar-item2 {
+    height: max-content;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
 .Sidebarsettings{
     position: absolute;
     bottom: 1%;

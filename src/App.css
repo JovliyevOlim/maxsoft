@@ -38,7 +38,24 @@ main{
   transition: all 0.4s;
 }
 .active{
-  background-color: #0bb68f;
+  background-color: rgba(128, 128, 128, 0.64);
+}
+.linkactive{
+  background-color: rgba(128, 128, 128, 0.85);
+}
+.link-icon{
+  margin-right: 10px;
+}
+.link-icon ~p{
+  margin: 0;
+}
+.link-icon-active{
+  margin-right: 10px;
+  color: white;
+}
+.link-icon-active ~ p{
+  margin: 0;
+  color: aliceblue;
 }
 .icon, .link_text{
   font-size: 20px;
@@ -62,7 +79,15 @@ main{
   margin-left: 15px;
 }
 
+<<<<<<< HEAD
 
+=======
+.pages2{
+  width: 100%;
+  border: 1px rgba(247, 243, 243, 0.5) solid;
+  padding: 20px;
+}
+>>>>>>> 1b9bc77779715d3dfe67c819001f3f2a064194c2
 
 a{
   width: 100%;
